@@ -1,0 +1,9 @@
+#Question 03
+inputlist = input('enter the strings in the list : ')
+stringlist = inputlist.split()
+#maxlength = max([len(s) for s in stringlist])
+maxlength = max(len(s) for s in stringlist) 
+LongestStrings = [s for s in stringlist if len(s) == maxlength]
+ml = max(len(s) for s in stringlist)
+result = list(set(s for s in stringlist if len(s) == ml))
+print(result)
