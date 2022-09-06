@@ -1,5 +1,6 @@
 #Question 03
-inputlist = input('enter the strings in the list : ')
+inputlist = input('enter the strings in the list with single space and no punctuation in between : ')
+#for ex: simply put : jack tom joe nick paul
 stringlist = inputlist.split()
 #maxlength = max([len(s) for s in stringlist])
 maxlength = max(len(s) for s in stringlist) 
